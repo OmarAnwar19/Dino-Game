@@ -1,0 +1,98 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #fdfefd;
+    margin: auto;
+    
+    background-image: url(img/background.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 600px 60px;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/trex.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 120px;
+}
+
+/*making a jump class, which calls the jump
+animation for 0.3 seconds
+
+in the js file, this class is added to the dinosaur 
+classlist, and then removed*/
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 120px;
+    }
+
+    10% {
+        top: 100px;
+    }
+
+    20% {
+        top: 80px;
+    }
+
+    30% {
+        top: 70px;
+    }
+
+    40% {
+        top: 50px;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    60% {
+        top: 50px;
+    }
+
+    70% {
+        top: 70px;
+    }
+
+    80% {
+        top: 80px;
+    }
+
+    90% {
+        top: 100px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 80px;
+    left: 580px;
+
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
